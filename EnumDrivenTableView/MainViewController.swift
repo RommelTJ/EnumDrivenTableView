@@ -31,6 +31,8 @@ class MainViewController: UIViewController {
     var error: Error?
     var isLoading = false
     
+    var state = State.loading
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "EnumDrivenTableView"
