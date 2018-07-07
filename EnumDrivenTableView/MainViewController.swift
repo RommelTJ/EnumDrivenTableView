@@ -13,6 +13,7 @@ enum State {
     case populated([Recording])
     case empty
     case error(Error)
+    case paging([Recording], next: Int)
     
     var currentRecordings: [Recording] {
         switch self {
