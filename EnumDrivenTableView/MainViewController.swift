@@ -91,7 +91,11 @@ class MainViewController: UIViewController {
                 return
         }
 
-        state = .populated(newRecordings)
+        if response.hasMorePages {
+            state = .paging(newRecordings, next: response.nextPage)
+        } else {
+            state = .populated(newRecordings)
+        }
     }
     
     // MARK: - View Configuration
