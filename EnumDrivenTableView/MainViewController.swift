@@ -66,17 +66,7 @@ class MainViewController: UIViewController {
     
     @objc func loadRecordings() {
         state = .loading
-        
-        let query = searchController.searchBar.text
-        networkingService.fetchRecordings(matching: query, page: 1) { [weak self] response in
-            
-            guard let `self` = self else {
-                return
-            }
-            
-            self.searchController.searchBar.endEditing(true)
-            self.update(response: response)
-        }
+        loadPage(1)
     }
     
     func update(response: RecordingsResult) {
@@ -95,6 +85,15 @@ class MainViewController: UIViewController {
             state = .paging(newRecordings, next: response.nextPage)
         } else {
             state = .populated(newRecordings)
+        }
+    }
+    
+    func loadPage(_ page: Int) {
+        let query = searchController.searchBar.text
+        networkingService.fetchRecordings(matching: query, page: page) { [weak self] response in
+            guard let `self` = self else { return }
+            self.searchController.searchBar.endEditing(true)
+            self.update(response: response)
         }
     }
     
@@ -181,6 +180,11 @@ extension MainViewController: UITableViewDataSource {
         }
         
         cell.load(recording: state.currentRecordings[indexPath.row])
+        
+        if case .paging(_, let nextPage) = state,
+            indexPath.row == state.currentRecordings.count - 1 {
+            loadPage(nextPage)
+        }
         
         return cell
     }
