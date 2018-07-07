@@ -19,6 +19,8 @@ enum State {
         switch self {
         case .populated(let recordings):
             return recordings
+        case .paging(let recordings, _):
+            return recordings
         default:
             return []
         }
@@ -136,6 +138,8 @@ class MainViewController: UIViewController {
             tableView.tableFooterView = emptyView
         case .populated:
             tableView.tableFooterView = nil
+        case .paging:
+            tableView.tableFooterView = loadingView
         }
     }
 }
