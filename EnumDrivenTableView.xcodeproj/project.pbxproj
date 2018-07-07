@@ -12,6 +12,8 @@
 		B02E435F20F0F00300A8B96D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B02E435D20F0F00300A8B96D /* Main.storyboard */; };
 		B02E436120F0F00400A8B96D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B02E436020F0F00400A8B96D /* Assets.xcassets */; };
 		B02E436420F0F00400A8B96D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B02E436220F0F00400A8B96D /* LaunchScreen.storyboard */; };
+		B02E436C20F0F31100A8B96D /* RecordingsResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02E436B20F0F31100A8B96D /* RecordingsResult.swift */; };
+		B02E436E20F0F33A00A8B96D /* Recording.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02E436D20F0F33A00A8B96D /* Recording.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		B02E436020F0F00400A8B96D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B02E436320F0F00400A8B96D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B02E436520F0F00400A8B96D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B02E436B20F0F31100A8B96D /* RecordingsResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingsResult.swift; sourceTree = "<group>"; };
+		B02E436D20F0F33A00A8B96D /* Recording.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recording.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				B02E436020F0F00400A8B96D /* Assets.xcassets */,
 				B02E436220F0F00400A8B96D /* LaunchScreen.storyboard */,
 				B02E436520F0F00400A8B96D /* Info.plist */,
+				B02E436B20F0F31100A8B96D /* RecordingsResult.swift */,
+				B02E436D20F0F33A00A8B96D /* Recording.swift */,
 			);
 			path = EnumDrivenTableView;
 			sourceTree = "<group>";
@@ -135,8 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B02E436C20F0F31100A8B96D /* RecordingsResult.swift in Sources */,
 				B02E435C20F0F00300A8B96D /* ViewController.swift in Sources */,
 				B02E435A20F0F00300A8B96D /* AppDelegate.swift in Sources */,
+				B02E436E20F0F33A00A8B96D /* Recording.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
