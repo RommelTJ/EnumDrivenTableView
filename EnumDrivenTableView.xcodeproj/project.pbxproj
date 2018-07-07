@@ -14,6 +14,11 @@
 		B02E436420F0F00400A8B96D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B02E436220F0F00400A8B96D /* LaunchScreen.storyboard */; };
 		B02E436C20F0F31100A8B96D /* RecordingsResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02E436B20F0F31100A8B96D /* RecordingsResult.swift */; };
 		B02E436E20F0F33A00A8B96D /* Recording.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02E436D20F0F33A00A8B96D /* Recording.swift */; };
+		B02E437020F0F44200A8B96D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02E436F20F0F44200A8B96D /* MainViewController.swift */; };
+		B02E437220F0F47E00A8B96D /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02E437120F0F47E00A8B96D /* NetworkingService.swift */; };
+		B02E437420F0F4C600A8B96D /* BirdSoundTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02E437320F0F4C600A8B96D /* BirdSoundTableViewCell.swift */; };
+		B02E437620F0F52500A8B96D /* BirdSoundTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B02E437520F0F52500A8B96D /* BirdSoundTableViewCell.xib */; };
+		B02E437820F0F55300A8B96D /* ServiceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02E437720F0F55300A8B96D /* ServiceResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		B02E436520F0F00400A8B96D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B02E436B20F0F31100A8B96D /* RecordingsResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingsResult.swift; sourceTree = "<group>"; };
 		B02E436D20F0F33A00A8B96D /* Recording.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recording.swift; sourceTree = "<group>"; };
+		B02E436F20F0F44200A8B96D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		B02E437120F0F47E00A8B96D /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
+		B02E437320F0F4C600A8B96D /* BirdSoundTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdSoundTableViewCell.swift; sourceTree = "<group>"; };
+		B02E437520F0F52500A8B96D /* BirdSoundTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BirdSoundTableViewCell.xib; sourceTree = "<group>"; };
+		B02E437720F0F55300A8B96D /* ServiceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +76,11 @@
 				B02E436520F0F00400A8B96D /* Info.plist */,
 				B02E436B20F0F31100A8B96D /* RecordingsResult.swift */,
 				B02E436D20F0F33A00A8B96D /* Recording.swift */,
+				B02E436F20F0F44200A8B96D /* MainViewController.swift */,
+				B02E437120F0F47E00A8B96D /* NetworkingService.swift */,
+				B02E437320F0F4C600A8B96D /* BirdSoundTableViewCell.swift */,
+				B02E437520F0F52500A8B96D /* BirdSoundTableViewCell.xib */,
+				B02E437720F0F55300A8B96D /* ServiceResponse.swift */,
 			);
 			path = EnumDrivenTableView;
 			sourceTree = "<group>";
@@ -128,6 +143,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B02E437620F0F52500A8B96D /* BirdSoundTableViewCell.xib in Resources */,
 				B02E436420F0F00400A8B96D /* LaunchScreen.storyboard in Resources */,
 				B02E436120F0F00400A8B96D /* Assets.xcassets in Resources */,
 				B02E435F20F0F00300A8B96D /* Main.storyboard in Resources */,
@@ -141,10 +157,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B02E437820F0F55300A8B96D /* ServiceResponse.swift in Sources */,
 				B02E436C20F0F31100A8B96D /* RecordingsResult.swift in Sources */,
 				B02E435C20F0F00300A8B96D /* ViewController.swift in Sources */,
 				B02E435A20F0F00300A8B96D /* AppDelegate.swift in Sources */,
+				B02E437220F0F47E00A8B96D /* NetworkingService.swift in Sources */,
 				B02E436E20F0F33A00A8B96D /* Recording.swift in Sources */,
+				B02E437420F0F4C600A8B96D /* BirdSoundTableViewCell.swift in Sources */,
+				B02E437020F0F44200A8B96D /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
