@@ -81,10 +81,13 @@ class MainViewController: UIViewController {
                 return
         }
 
+        var allRecordings = state.currentRecordings
+        allRecordings.append(contentsOf: newRecordings)
+        
         if response.hasMorePages {
-            state = .paging(newRecordings, next: response.nextPage)
+            state = .paging(allRecordings, next: response.nextPage)
         } else {
-            state = .populated(newRecordings)
+            state = .populated(allRecordings)
         }
     }
     
