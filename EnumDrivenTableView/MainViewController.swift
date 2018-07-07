@@ -8,6 +8,13 @@
 
 import UIKit
 
+enum State {
+    case loading
+    case populated([Recording])
+    case empty
+    case error(Error)
+}
+
 class MainViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
